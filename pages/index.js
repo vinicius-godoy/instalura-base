@@ -1,4 +1,4 @@
-import Menu from '../src/componentes/commons/Menu'
+import Menu from '../src/componentes/commons/Menu';
 
 export default function Home() {
   return (
@@ -6,4 +6,4 @@ export default function Home() {
       <Menu />
     </div>
   )
-}
+};

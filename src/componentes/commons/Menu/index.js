@@ -1,7 +1,7 @@
-import React from 'react'
-import { Logo } from '../../../theme/Logo'
-import { Button } from '../Button'
-import { MenuWrapper } from './styles/MenuWrapper'
+import React from 'react';
+import { Logo } from '../../../theme/Logo';
+import { Button } from '../Button';
+import { MenuWrapper } from './styles/MenuWrapper';
 
 export default function Menu() {
   const links = [
@@ -17,7 +17,7 @@ export default function Menu() {
       texto: 'Sobre',
       url: '/sobre',
     },
-  ]
+  ];
 
   return (
     <MenuWrapper>
@@ -45,4 +45,4 @@ export default function Menu() {
       </MenuWrapper.RightSide>
     </MenuWrapper>
   )
-}
+};

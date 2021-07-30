@@ -1,6 +1,6 @@
 import Head from 'next/head';
-import { createGlobalStyle, ThemeProvider } from 'styled-components'
-import theme from '../src/theme'
+import { createGlobalStyle, ThemeProvider } from 'styled-components';
+import theme from '../src/theme';
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -8,7 +8,7 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
   }
-`
+`;
 
 export default function App({ Component, pageProps }) {
   return (
@@ -42,4 +42,4 @@ export default function App({ Component, pageProps }) {
       </ThemeProvider>
     </>
   )
-}
+};

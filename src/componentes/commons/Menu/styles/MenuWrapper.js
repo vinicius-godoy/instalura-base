@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const MenuWrapper = styled.nav`
   font-family: 'Rubik', sans-serif;
@@ -9,7 +9,7 @@ export const MenuWrapper = styled.nav`
   margin-top: 18px;
   padding-left: 28px;
   padding-right: 28px;
-`
+`;
 
 MenuWrapper.LeftSide = styled.div`
   padding: 0;

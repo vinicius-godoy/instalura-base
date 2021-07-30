@@ -4,4 +4,4 @@ export default function PageSobre(){
       Página Sobre
     </div>
   )
-}
+};
