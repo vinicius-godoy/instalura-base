@@ -2,7 +2,7 @@ import { breakpointsMedia } from "./breakpointsMedia";
 
 export function propToStyle(propName, props) {
   return (props) => {
-    console.log('props[textAlign]', props[propName])
+    // console.log('props[textAlign]', props[propName])
     const propValue = props[propName];
 
     if(typeof propValue === 'string'){

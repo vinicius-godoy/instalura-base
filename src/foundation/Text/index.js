@@ -36,7 +36,7 @@ export default function Text({ tag, variant, children, ...props }) {
   );
 };
 
-Text.PropTypes = {
+Text.propTypes = {
   tag: PropTypes.string.isRequired,
   variant: PropTypes.string,
   children: PropTypes.node.isRequired,
