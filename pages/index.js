@@ -1,25 +1,39 @@
-import { Button } from '../src/componentes/commons/Button';
+import React from 'react';
+import Button from '../src/componentes/commons/Button';
 import Footer from '../src/componentes/commons/Footer';
 import Menu from '../src/componentes/commons/Menu';
 import Text from '../src/foundation/Text';
-import { Grid } from '../src/foundation/layout/Grid';
+import Grid from '../src/foundation/layout/Grid';
+import Box from '../src/foundation/layout/Box';
 
 export default function Home() {
   return (
-    <div style={{
-      flex: '1',
-      display: 'flex',
-      flexWrap: 'wrap',
-      flexDirection: 'column',
-      justifyContent: 'space-between',
-    }}>
+    <Box
+      flex={1}
+      display="flex"
+      flexWrap="wrap"
+      flexDirection="column"
+      justifyContent="space-between"
+      backgroundImage="url(/images/bubbles.svg)"
+      backgroundRepeat="no-repeat"
+      backgroundPosition="bottom right"
+    >
       <Menu />
 
-      <Grid.Container>
+      <Grid.Container
+        marginTop={{
+          xs: '32px',
+          md: '75px',
+        }}
+      >
         <Grid.Row>
           <Grid.Col
             offset={{ xs: 0, md: 1 }}
             value={{ xs: 12, md: 5 }}
+            display="flex"
+            alignItems="flex-start"
+            justifyContent="center"
+            flexDirection="column"
           >
             <Text
               variant="title"
@@ -59,10 +73,11 @@ export default function Home() {
           <Grid.Col
             value={{
               xs: 12,
-              md: 5
+              md: 5,
             }}
           >
             <img
+              alt="Imagem de um celular com as páginas internas do projeto com o perfil do Nicolas Cage"
               style={{ display: 'block', margin: 'auto' }}
               src="https://bootcamp-alura-01-git-modulo01.omariosouto.vercel.app/images/phones.png"
             />
@@ -71,6 +86,6 @@ export default function Home() {
       </Grid.Container>
 
       <Footer />
-    </div>
-  )
-};
+    </Box>
+  );
+}

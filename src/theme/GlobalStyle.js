@@ -1,8 +1,8 @@
 import { createGlobalStyle } from 'styled-components';
 import { normalize } from 'styled-normalize';
 
-//CSS Reset
-export const GlobalStyle = createGlobalStyle`
+// CSS Reset
+const GlobalStyle = createGlobalStyle`
   * {
     box-sizing: border-box;
   }
@@ -28,3 +28,5 @@ export const GlobalStyle = createGlobalStyle`
     flex-direction: column;
   }
 `;
+
+export default GlobalStyle;
